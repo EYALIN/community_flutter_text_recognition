@@ -1,0 +1,36 @@
+name: community_flutter_text_recognition
+description: "On-device text recognition (OCR) of an image for Flutter: ML Kit on Android, Apple Vision on iOS. The image never leaves the device."
+version: 1.0.0
+homepage: https://github.com/EYALIN/community_flutter_text_recognition
+repository: https://github.com/EYALIN/community_flutter_text_recognition
+issue_tracker: https://github.com/EYALIN/community_flutter_text_recognition/issues
+funding:
+  - https://github.com/sponsors/EYALIN
+topics:
+  - ocr
+  - text-recognition
+  - mlkit
+  - vision
+  - image
+
+environment:
+  sdk: ^3.13.5
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.community.flutter.textrecognition
+        pluginClass: CommunityFlutterTextRecognitionPlugin
+      ios:
+        pluginClass: CommunityFlutterTextRecognitionPlugin
